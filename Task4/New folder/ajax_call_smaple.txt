@@ -1,0 +1,62 @@
+
+
+Sample Ajax call:
+
+$('#attach_acc_form').on("submit", function(e) { // on submitting event of form
+    $('#attach_old_live').attr("disabled", true);   // disable the sumbit button to avoid multiple click
+    var acc_no = $('#attach_acc_no').val();         // get value of input
+    var password = $('#attach_acc_password').val(); // get value of input
+    var res = passwordcheck(acc_no, password);      // you can use any validation for input
+    e.preventDefault();                             // to avoid page refreshing while submitting
+    if (acc_no != '0') {                            // direct check of input
+        alert("Invalid input");
+        $('#attach_old_live').removeAttr('disabled');   // enable the sumbit button
+        return false;
+    } else {
+        $.ajax({
+            url: "../test/account_operations.php",      // proper url of backend file
+            type: "POST",                               // POST or GET
+            dataType: "text",                           // text, json, ...
+            async: false,                               // for handling synchronization
+            data: {                                     // passing parameter list
+                old_account_no: acc_no,                 // parameter name : value
+                main_password: password
+            },
+            success: function(msgg) {                    // success function of ajax call
+                console.log(msg);                        // printing return msg in console log
+                var msg = msgg.trim();                  // trim() will remove unwanted empty lines 
+                alert(msg);                             // alert popup of return msg
+            },
+            error: function(jqXHR, ajaxOptions, exception) {    // error function of ajax call
+                console.log(jqXHR);                             // printing error msg in console log
+                alert(jqXHR);
+            }
+        });
+    }
+});
+
+for sumbiting file data :
+                var file_data = $('#attach_file')[0].files[0];
+				var form_data = new FormData();                  // create form object
+    			form_data.append('proof_file', file_data);      // add the file data with parameter name
+				
+                $.ajax({
+                    url: "controller/manager_service.php",
+                    type: "POST",                              //   __
+                    data: form_data,                           //  |
+                    contentType: false,                        //  |
+                    processData: false,                        //  |_these three needed for submitting file
+                    success: function(a) {
+                    }
+                });
+
+for sumbiting whole form data :
+            var data = $('#attach_acc_form').serialize();
+            $.ajax({
+                url: "save.php",
+                type: "POST",
+                data: data,
+                async:false,
+                success: function(a) {
+                }
+            });
