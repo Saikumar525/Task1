@@ -1,0 +1,7 @@
+1.Landing page should be table design given as images(table.png)
+2.After Loading landingPage table wait 3 seconds then show popup
+3.Inside popup modal develop that form also design given as image
+
+colorcode: rgb(0, 231, 123)
+font family : poppins
+text color in table:red

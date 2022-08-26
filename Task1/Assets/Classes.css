@@ -1,0 +1,87 @@
+
+.fontstyles
+{
+    text-align: left;
+    color:#000;
+    font-size: larger;
+    padding-top: 35px;
+    font-family: 'poppins';
+}
+.fontstyles2
+{
+    font-family: 'poppins';
+}
+.fontstyles3
+{
+    padding-top: 60px;
+    padding-right: 65px;
+    text-align: center;
+}
+.align1
+{
+    padding-left: 400px;
+}
+.boxes
+{
+    width: 70px;
+    height: 25px;
+}
+.pagenumber
+{
+    height: 40px;
+    width: 40px;
+    background-color: red;
+    box-shadow: #000;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1,1);
+    transform: scale(1,1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    transition-property: box-shadow, shadow;
+}
+
+.formbox
+{
+    padding-bottom: 20px;
+}
+
+.imagealign
+{
+    height: 100%;
+    width: 250%;
+    padding-right: 40px;
+}
+
+.rowgap
+{
+    padding-top:75px;
+}
+.rowgap2
+{
+    padding-top:30px;
+}
+
+
+.formgap
+{
+    padding-bottom: -50px;
+}
+.submitbutton
+{
+    width: 180px;
+}
+
+h6
+{
+ font-size: 11px;
+}
+
+.iconalign
+{
+    clip-path:circle();
+    color: lightgrey;
+    margin: 5px;
+}
