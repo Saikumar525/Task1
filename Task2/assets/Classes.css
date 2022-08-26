@@ -1,0 +1,131 @@
+/* Head */
+.head-bg
+{
+background-color: #000;
+}
+
+/* Navbar */
+.togglebtn
+{
+    padding-right: 35px;
+}
+
+.navbarawidth
+{
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+.navbaralign
+{
+    background-color: orange;
+    border-radius: 25px;
+    width: 80px;
+}
+
+.demologo
+{
+    height: 50%;
+    width: 50%;
+    margin-left: 40px;
+}
+
+.listitems
+{
+    margin-right: 25px;
+}
+
+/* Carousel */
+
+.slideimg
+{
+   padding-left: 80px;
+   height: 200px;
+   width: 200px;
+   position: relative;
+   text-align: center;
+   min-width: 40px;
+   min-width: 40px;
+}
+.top-left1 {
+    position: absolute;
+    top: 40px;
+    left: -110px;
+    padding-left: 170px;
+    font-family: poppins;
+  }
+  .top-left2 {
+    position: absolute;
+    top: 65px;
+    left: -110px;
+    padding-left: 170px;
+    font-family: poppins;
+  }
+
+  .centeredslidetext {
+    position: absolute;
+    top: 63%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    font-family: poppins;
+    font-size: 8px;
+  }
+.Openaccountbtn
+{
+    position: absolute;
+    top: 80%;
+    left: 25%;
+    background-color: black;
+    box-shadow: #000;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1,1);
+    transform: translate(-50%, -50%);  
+    transform: scale(1,1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    transition-property: box-shadow, shadow;
+    font-family: poppins;
+}
+
+/* Accordion */
+.cardheaders
+{
+    background-color: black;
+}
+
+.cardsalign
+{
+    width: 700px;
+    margin-top: 50px;
+}
+
+.headcontent
+{
+    margin-top: 6px;
+    color: white;
+    font-size: 13px;
+    font-family: poppins;
+}
+
+.cardcontent
+{
+    color: black; 
+    font-size: 13px;
+    font-family: poppins;
+}
+
+.arrowalign
+{
+    padding-left: 0px;
+    color: white;
+}
+
+.cardcontent2
+{
+    margin-bottom: -20px; 
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
